@@ -27,10 +27,11 @@ class HomePage extends StatelessWidget {
               ),
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
-                    height: 150,
-                    width: 150,
+                    height: 180,
+                    width: 170,
                     
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
@@ -45,9 +46,69 @@ class HomePage extends StatelessWidget {
                           Text("Vegetables",style: TextStyle(
                             fontSize: 20,
                             color: Colors.white
-                          ),),
-                          Text("Fresh from farm"),
-                          Container()
+                          ),
+                          ),
+                          Text("Fresh from farm",style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.white
+                          ),
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Center(
+                            child: Container(
+                              height: 80,
+                              width: 120,
+                              decoration: BoxDecoration(
+                                borderRadius:BorderRadius.circular(8),
+                                color: Color(0xff06FFA5) 
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    
+
+                  ),
+                  Container(
+                    height: 180,
+                    width: 170,
+                    
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color:Color.fromARGB(255, 122, 99, 215),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          
+                          Text("Vegetables",style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white
+                          ),
+                          ),
+                          Text("Fresh from farm",style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.white
+                          ),
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Center(
+                            child: Container(
+                              height: 80,
+                              width: 120,
+                              decoration: BoxDecoration(
+                                borderRadius:BorderRadius.circular(8),
+                                color: Color(0xff06FFA5) 
+                              ),
+                            ),
+                          )
                         ],
                       ),
                     ),
