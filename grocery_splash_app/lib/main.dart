@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_splash_app/pages/categoryPage/category_page.dart';
 import 'package:grocery_splash_app/pages/home_page/home_page.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "Grocery Splash App",
-    home: HomePage(),
+    home: CategoryPage(),
 
 
     );
