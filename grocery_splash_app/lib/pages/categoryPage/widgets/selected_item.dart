@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_splash_app/pages/categoryPage/widgets/rating.dart';
+import 'package:grocery_splash_app/widgets/reusable/item_desc.dart';
 
 class SelectedItem extends StatelessWidget {
   const SelectedItem({super.key});
@@ -6,7 +8,7 @@ class SelectedItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-     height: 600,
+     height: 400,
      width: double.infinity,
      decoration: BoxDecoration(
       color: Color(0xffE0DCD6).withOpacity(0.29),
@@ -17,38 +19,54 @@ class SelectedItem extends StatelessWidget {
       )
      ),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(5.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text("Vegetables",style: TextStyle(
               fontWeight: FontWeight.w700,
               fontSize: 30,
-        
-            ),),
-           Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+           Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Container(
-                height: 40,
-                width: 40,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(100),
-                  color: Color(0xffFFE500)
-                ),
-                child: Center(child:
-                 Icon(Icons.numbers,
-                  color: Colors.black
-                  )
-                  ),
+              ItemDesc(
+                number:1,
+                description:"dataVegetables are parts of plants that are consumed by humans...",
+
               ),
-              Text("dataVegetables are parts of plants that are \nconsumed by humans...",
-              style: TextStyle(fontWeight: FontWeight.w700,fontSize: 14,
+              SizedBox(
+              height: 20,
+            ),
+              ItemDesc(
+                number:2,
+                description:"Vegetables are parts of plants that are consumed by humans...",
               ),
+              SizedBox(
+              height: 20,
+            ),
+              ItemDesc(
+                number:3,
+                description:"Vegetables are parts of plants that are consumed by humans...",
+              ),
+              SizedBox(
+              height: 20,
+            ),
+
+              ItemDesc(
+                number:4,
+                description:"Vegetables are parts of plants that are consumed by humans...",
               ),
             ],
-           )
-        
+           ),
+           SizedBox(
+              height: 20,
+            ),
+            Rating(),
           ],
         ),
       ),
