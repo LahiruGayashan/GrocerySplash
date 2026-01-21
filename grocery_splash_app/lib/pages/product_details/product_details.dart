@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_splash_app/pages/product_details/price_card.dart';
 import 'package:grocery_splash_app/widgets/reusable/product_details/title_desc_card.dart';
 import 'package:grocery_splash_app/widgets/shared/notification_card.dart';
 
@@ -69,14 +70,7 @@ class ProductDetailsPage extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Container(
-                        height: 50,
-                        width: 50,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                          color: Color(0XFFFFE500)
-                        ),
-                      )
+                      PriceCard(),
                     ],
                   )
                 ],
