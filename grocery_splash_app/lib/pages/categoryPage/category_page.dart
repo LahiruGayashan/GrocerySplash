@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_splash_app/pages/categoryPage/widgets/selected_item.dart';
-import 'package:grocery_splash_app/widgets/reusable/categorie_card.dart';
+import 'package:grocery_splash_app/widgets/reusable/categories_page/categorie_card.dart';
 import 'package:grocery_splash_app/widgets/shared/notification_card.dart';
 
 class CategoryPage extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_splash_app/pages/categoryPage/widgets/rating.dart';
-import 'package:grocery_splash_app/widgets/reusable/item_desc.dart';
+import 'package:grocery_splash_app/widgets/reusable/categories_page/item_desc.dart';
 
 class SelectedItem extends StatelessWidget {
   const SelectedItem({super.key});
