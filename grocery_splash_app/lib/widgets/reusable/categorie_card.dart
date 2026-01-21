@@ -19,8 +19,9 @@ class CategorieCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
-      width: 190,
+      height: 90,
+      width: 170,
+      margin: EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
         color: boxColor,
         borderRadius: BorderRadius.circular(8),
@@ -29,9 +30,10 @@ class CategorieCard extends StatelessWidget {
     child: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(title, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
@@ -39,8 +41,8 @@ class CategorieCard extends StatelessWidget {
             ],
           ),
           Container(
-            height: 40,
-            width: 40,
+            height: 45,
+            width: 45,
             decoration: BoxDecoration(
               color: circleColor,
               shape: BoxShape.circle,
@@ -52,3 +54,5 @@ class CategorieCard extends StatelessWidget {
     );
   }
 }
+
+
