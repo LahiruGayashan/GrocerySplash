@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:grocery_splash_app/pages/home_page/widgets/search_bar.dart';

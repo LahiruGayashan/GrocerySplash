@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_splash_app/pages/product_details/price_card.dart';
+import 'package:grocery_splash_app/widgets/reusable/product_details/price_card.dart';
 import 'package:grocery_splash_app/widgets/reusable/product_details/title_desc_card.dart';
+import 'package:grocery_splash_app/widgets/shared/gradient_button.dart';
 import 'package:grocery_splash_app/widgets/shared/notification_card.dart';
 
 class ProductDetailsPage extends StatelessWidget {
@@ -54,29 +55,65 @@ class ProductDetailsPage extends StatelessWidget {
                SizedBox(
                 height: 10,
                ),
-               Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Price List",
-                  style: TextStyle(
-                   fontSize: 20,
-                   fontWeight: FontWeight.w500,
-                  ),
-                  ),
-                  SizedBox(
-                height: 20,
+               Text("Price List",
+               style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
                ),
-               Column(
-                children: [
-                  Row(
+               ),
+               SizedBox(
+                     height: 20,
+                 ),
+              PriceCard(
+               productName: "Green peas ",
+               productNumber: 1,
+               productWeight: "100",
+               unit: "g",
+                 ),
+                 PriceCard(
+               productName: "Brussels sprouts ",
+               productNumber: 2,
+               productWeight: "100",
+               unit: "g",
+                 ),
+                 PriceCard(
+               productName: "Broccoli,papay,banana,bengermin,salad  Qcamba",
+               productNumber: 3,
+               productWeight: "100",
+               unit: "g",
+                 ),
+                 PriceCard(
+               productName: "Green peas ",
+               productNumber: 4,
+               productWeight: "100",
+               unit: "g",
+                 ),
+                 Padding(
+                   padding: const EdgeInsets.all(10.0),
+                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      PriceCard(),
+                      Text("Total",style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      ),
+                      SizedBox(
+                        width: 50,
+                      ),
+                      Text("230\$",style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff9E00FF)
+                      ),
+                      ),
                     ],
-                  )
-                ],
-               )
-                ],
-               )
+                    
+                   ),
+                 ),
+                 GradientButton(
+
+                 ),
           ],
         ),
       

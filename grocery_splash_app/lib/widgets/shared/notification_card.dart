@@ -12,7 +12,7 @@ class NotificationCard extends StatelessWidget {
       width: double.infinity,
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: Color(0XFFFF2E4CE),
+        color: Color(0Xffff2e4ce),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: Color(0XFFFF9900)),
       ),
