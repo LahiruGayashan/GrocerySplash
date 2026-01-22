@@ -28,8 +28,8 @@ class GradientButton extends StatelessWidget {
       ),
       child: Center(
         child: Text(
-          "data",
-          style: TextStyle(fontSize: 40, fontWeight: FontWeight.w700),
+          buttonTitile,
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
         ),
       ),
     );

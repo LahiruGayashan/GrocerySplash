@@ -119,7 +119,7 @@ class ProductDetailsPage extends StatelessWidget {
                      GradientButton(
                       bottomColor: Color(0XFFFFE500),
                       topColor: Color(0XFFCC00FF),
-                      buttonTitile: "Button"
+                      buttonTitile: "Process To Pay"
                      
                      ),
                    ],
