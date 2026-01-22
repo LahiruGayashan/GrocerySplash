@@ -107,13 +107,27 @@ class ProductDetailsPage extends StatelessWidget {
                         color: Color(0xff9E00FF)
                       ),
                       ),
-                    ],
-                    
+                    ],  
                    ),
                  ),
-                 GradientButton(
-
+                 SizedBox(
+                        height: 30,
+                      ),
+                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                   children: [
+                     GradientButton(
+                      bottomColor: Color(0XFFFFE500),
+                      topColor: Color(0XFFCC00FF),
+                      buttonTitile: "Button"
+                     
+                     ),
+                   ],
                  ),
+                 SizedBox(
+                        height: 30,
+                      ),
+
           ],
         ),
       
